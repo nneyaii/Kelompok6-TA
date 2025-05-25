@@ -1,0 +1,147 @@
+/* Umum */
+body {
+    background-color: #f8f9fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container umum */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+/* ======================== */
+/* === INDEX PROFIL CSS === */
+/* ======================== */
+.profile-card {
+    text-align: center;
+    padding-top: 60px;
+    position: relative;
+}
+
+.profile-card img.profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    background-color: #e0e0e0;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile-card h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.profile-card .row {
+    margin-top: 30px;
+}
+
+.profile-card .col-md-6 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+}
+
+.profile-card .col-md-6 i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #4e73df;
+}
+
+/* Tombol ubah profil */
+.btn-edit {
+    display: inline-block;
+    margin-top: 30px;
+    /*Gesertombolkebawah*/padding: 10px 20px;
+    background-color: #f1ac68;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    font-weight: 500;
+    text-align: center;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+}
+
+.btn-edit:hover {
+    background-color: #323232;
+}
+
+
+/* =========================== */
+/* === EDIT PROFIL FORM CSS === */
+/* =========================== */
+form label {
+    font-weight: 500;
+    margin-top: 15px;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="file"],
+form select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+form input[type="file"] {
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #3702d6;
+    border: none;
+    padding: 10px 24px;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-top: 25px;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #10d706;
+}
+
+.btn-secondary {
+    margin-left: 10px;
+    background-color: #d80404;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Judul section */
+h4 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #343a40;
+}
