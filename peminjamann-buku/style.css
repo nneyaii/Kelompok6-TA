@@ -1,0 +1,32 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fb;
+    margin: 0;
+    padding: 2rem;
+}
+h2 { color: #333; }
+.filter-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.filter-form input, .filter-form button, .filter-form a {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+}
+button { background-color: #3f51b5; color: white; border: none; }
+.reset-btn { background-color: #777; color: white; }
+.add-btn { background-color: #4caf50; color: white; }
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+th, td { padding: 12px; border-bottom: 1px solid #ddd; }
+.status { padding: 4px 8px; border-radius: 12px; font-size: 0.85em; color: white; }
+.status.Pinjam { background-color: #3f51b5; }
+.status.Kembali { background-color: #4caf50; }
