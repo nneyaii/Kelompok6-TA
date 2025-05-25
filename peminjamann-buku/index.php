@@ -51,7 +51,7 @@
                     <td><i>" . ($row['keterangan'] ?: '(Tidak diisi)') . "</i></td>
                     <td>
                         <a href='edit.php?id={$row['id']}'>Edit</a> | 
-                        <a href='hapus.php?id={$row['id']}' onclick='return confirm("Yakin?")'>Hapus</a>
+                        <a href='hapus.php?id={$row['id']}' onclick='return confirm(\"Yakin?\")'>Hapus</a>
                     </td>
                 </tr>";
                 $no++;

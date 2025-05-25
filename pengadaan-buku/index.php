@@ -9,11 +9,11 @@
     <h2>Laporan Pengadaan</h2>
 
     <form method="GET">
-        <input type="date" name="tanggal_mulai">
-        <input type="date" name="tanggal_akhir">
+        <input type="date" name="tanggal_mulai" value="<?= $_GET['tanggal_mulai'] ?? '' ?>">
+        <input type="date" name="tanggal_akhir" value="<?= $_GET['tanggal_akhir'] ?? '' ?>">
         <button type="submit">Filter</button>
         <a href="tambah.php">Tambah Data</a>
-        <a href="cetak_pdf.php?tanggal_mulai=<?=$_GET['tanggal_mulai']??''?>&tanggal_akhir=<?=$_GET['tanggal_akhir']??''?>" target="_blank">Cetak PDF</a>
+        <a href="cetak_pdf.php?tanggal_mulai=<?= $_GET['tanggal_mulai'] ?? '' ?>&tanggal_akhir=<?= $_GET['tanggal_akhir'] ?? '' ?>" target="_blank">Cetak PDF</a>
     </form>
 
     <table>
@@ -40,7 +40,7 @@
             $result = $koneksi->query("SELECT * FROM pengadaan $where ORDER BY tanggal DESC");
             while ($row = $result->fetch_assoc()) {
                 echo "<tr>
-                    <td>{$no++}</td>
+                    <td>$no</td>
                     <td>{$row['tanggal']}</td>
                     <td>{$row['judul_buku']}</td>
                     <td>{$row['asal_buku']}</td>
@@ -51,6 +51,7 @@
                         <a href='hapus.php?id={$row['id']}' onclick='return confirm(\"Yakin?\")'>Hapus</a>
                     </td>
                 </tr>";
+                $no++;
             }
             ?>
         </tbody>
