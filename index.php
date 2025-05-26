@@ -99,39 +99,91 @@ if (!isset($_SESSION['user_email'])) {
     </div>
 
     <!-- Grafik & Tabel -->
-      <div class="col-md-100">
-        <div class="card p-3 shadow-sm">
-          <h6 class="fw-semibold mb-3">Data Peminjaman Terbaru</h6>
-          <table class="table table-bordered table-hover mb-0">
-            <thead class="table-light">
-              <tr>
-                <th>Tanggal</th>
-                <th>Anggota</th>
-                <th>Tempo</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>15-09-2020</td>
-                <td>Heri Perdi</td>
-                <td>18-09-2020</td>
-                <td><span class="text-dark">Dipinjam</span></td>
-              </tr>
-              <tr>
-                <td>15-09-2020</td>
-                <td>Heri Perdi</td>
-                <td>18-09-2020</td>
-                <td><span class="text-dark">Kembali</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card p-3 shadow-sm mb-4">
+      <h6 class="fw-semibold mb-3">Data Anggota</h6>
+      <table class="table table-bordered table-hover mb-0">
+        <thead class="table-light">
+          <tr>
+            <th>Nama Lengkap</th>
+            <th>No. Telepon</th>
+            <th>Jenis Kelamin</th>
+            <th>Umur</th>
+            <th>Alamat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>figa</td>
+            <td>081111111111</td>
+            <td>Laki-laki</td>
+            <td>15</td>
+            <td>Jalan</td>
+          </tr>
+          <tr>
+            <td>yoga</td>
+            <td>0855555555</td>
+            <td>Laki-laki</td>
+            <td>17</td>
+            <td>mugas</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card p-3 shadow-sm mb-4">
+      <h6 class="fw-semibold mb-3">Data Buku Populer</h6>
+      <table class="table table-bordered table-hover mb-0">
+        <thead class="table-light">
+          <tr>
+            <th>Judul Buku</th>
+            <th>Penulis</th>
+            <th>Jumlah Dipinjam</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Laskar Pelangi</td>
+            <td>Andrea Hirata</td>
+            <td>120</td>
+          </tr>
+          <tr>
+            <td>Negeri 5 Menara</td>
+            <td>Ahmad Fuadi</td>
+            <td>98</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card p-3 shadow-sm mb-4">
+      <h6 class="fw-semibold mb-3">Data Anggota Aktif</h6>
+      <table class="table table-bordered table-hover mb-0">
+        <thead class="table-light">
+          <tr>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Jumlah Pinjam</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Heri Perdi</td>
+            <td>heri@gmail.com</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>Rina Wulandari</td>
+            <td>rina@mail.com</td>
+            <td>22</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
+</div>
 
-  
 
   <!-- Scripts -->
   <script>
