@@ -68,11 +68,11 @@
     <h4><i class="fas fa-book-reader me-2"></i>Perpus Admin</h4>
     <nav>
         <a href="../index.php"><i class="fas fa-chart-pie me-2"></i> Dashboard</a>
-        <a href="pengguna.php" class="active"><i class="fas fa-user-shield me-2"></i> Admin</a>
+        <a href="pengguna.php" ><i class="fas fa-user-shield me-2"></i> Admin</a>
         <a href="../data-anggota/index.php"><i class="fas fa-users me-2"></i> Data Anggota</a>
         <a href="../data-buku/index.php"><i class="fas fa-book me-2"></i> Data Buku</a>
         <a href="../peminjamann-buku/index.php"><i class="fas fa-book-reader me-2"></i> Peminjaman Buku</a>
-        <a href="../pengadaan-buku/index.php"><i class="fas fa-box me-2"></i> Pengadaan Buku</a>
+        <a href="../pengadaan-buku/index.php" class="active"><i class="fas fa-box me-2"></i> Pengadaan Buku</a>
         <a href="../profil-admin/index.php"><i class="fas fa-user-circle me-2"></i> Profil Admin</a>
     </nav>
 </div>
