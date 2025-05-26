@@ -21,7 +21,7 @@ if (!isset($_SESSION['user_email'])) {
 <div class="sidebar d-flex flex-column">
     <h4><i class="fas fa-book-reader me-2"></i>Perpus Admin</h4>
         <nav>
-        <a href="dashboard.php" class="nav-link active">
+        <a href="index.php" class="nav-link active">
             <i class="fas fa-chart-pie me-2"></i> Dashboard
         </a>
         <a href="data-pengguna/pengguna.php" class="nav-link">
