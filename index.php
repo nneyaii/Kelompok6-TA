@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_email'])) {
-    header("Location: config.php");
+    header("Location: index.php");
     exit();
 }
 ?>
@@ -75,7 +75,7 @@ if (!isset($_SESSION['user_email'])) {
       <div class="col-md-3">
         <div class="card shadow-sm p-3">
           <small class="text-success fw-bold">Jumlah Buku</small>
-          <h4 class="m-0">1200</h4>
+          <h4 class="m-0">3</h4>
         </div>
       </div>
       <div class="col-md-3">
@@ -99,7 +99,7 @@ if (!isset($_SESSION['user_email'])) {
     </div>
 
     <!-- Grafik & Tabel -->
-      <div class="col-md-6">
+      <div class="col-md-100">
         <div class="card p-3 shadow-sm">
           <h6 class="fw-semibold mb-3">Data Peminjaman Terbaru</h6>
           <table class="table table-bordered table-hover mb-0">
@@ -130,6 +130,8 @@ if (!isset($_SESSION['user_email'])) {
       </div>
     </div>
   </div>
+
+  
 
   <!-- Scripts -->
   <script>
