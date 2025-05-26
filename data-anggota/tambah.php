@@ -1,34 +1,109 @@
 <?php include 'db.php'; ?>
 <!DOCTYPE html>
 <html>
-<head>data-anggota
+<head>
     <title>Tambah Anggota</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea,
+        input[type="file"] {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-add {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+        }
+
+        .btn-add:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
     <h2>Tambah Data Anggota</h2>
     <form method="POST" enctype="multipart/form-data">
-        <label>Nama Lengkap</label><br>
-        <input type="text" name="nama" required><br><br>
+        <label>Nama Lengkap</label>
+        <input type="text" name="nama" required>
 
-        <label>No. Telepon</label><br>
-        <input type="text" name="telepon" required><br><br>
+        <label>No. Telepon</label>
+        <input type="text" name="telepon" required>
 
-        <label>Jenis Kelamin</label><br>
+        <label>Jenis Kelamin</label>
         <select name="gender" required>
             <option value="Laki-laki">Laki-laki</option>
             <option value="Perempuan">Perempuan</option>
-        </select><br><br>
+        </select>
 
-        <label>Umur</label><br>
-        <input type="number" name="umur" required><br><br>
+        <label>Umur</label>
+        <input type="number" name="umur" required>
 
-        <label>Alamat</label><br>
-        <textarea name="alamat" required></textarea><br><br>
+        <label>Alamat</label>
+        <textarea name="alamat" required></textarea>
 
-        <label>Foto</label><br>
-        <input type="file" name="foto" accept="image/*" required><br><br>
+        <label>Foto</label>
+        <input type="file" name="foto" accept="image/*" required>
 
         <button type="submit" class="btn btn-add">Simpan</button>
     </form>
