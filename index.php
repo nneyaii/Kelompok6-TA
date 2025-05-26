@@ -99,11 +99,7 @@ if (!isset($_SESSION['user_email'])) {
     </div>
 
     <!-- Grafik & Tabel -->
-<<<<<<< HEAD
-    
-=======
->>>>>>> 2a21c5f08fa78fecf7f540b62a9f962348e68197
-      <div class="col-md-6">
+      <div class="col-md-100">
         <div class="card p-3 shadow-sm">
           <h6 class="fw-semibold mb-3">Data Peminjaman Terbaru</h6>
           <table class="table table-bordered table-hover mb-0">
