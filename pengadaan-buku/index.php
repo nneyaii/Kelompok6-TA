@@ -87,7 +87,6 @@
             <input type="date" name="tanggal_akhir" value="<?= $_GET['tanggal_akhir'] ?? '' ?>">
             <button type="submit">Filter</button>
             <a href="tambah.php">Tambah Data</a>
-            <a href="cetak_pdf.php?tanggal_mulai=<?= $_GET['tanggal_mulai'] ?? '' ?>&tanggal_akhir=<?= $_GET['tanggal_akhir'] ?? '' ?>" target="_blank">Cetak PDF</a>
         </form>
 
         <!-- Tabel -->
