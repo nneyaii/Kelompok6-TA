@@ -75,7 +75,7 @@ if (!isset($_SESSION['user_email'])) {
       <div class="col-md-3">
         <div class="card shadow-sm p-3">
           <small class="text-success fw-bold">Jumlah Buku</small>
-          <h4 class="m-0">1200</h4>
+          <h4 class="m-0">3</h4>
         </div>
       </div>
       <div class="col-md-3">
@@ -99,13 +99,7 @@ if (!isset($_SESSION['user_email'])) {
     </div>
 
     <!-- Grafik & Tabel -->
-    <div class="row g-3">
-      <div class="col-md-6">
-        <div class="card p-3 shadow-sm">
-          <h6 class="fw-semibold mb-3">Grafik Peminjaman</h6>
-          <div style="height: 200px; background: #e2e8f0; border-radius: 8px;"></div>
-        </div>
-      </div>
+    
       <div class="col-md-6">
         <div class="card p-3 shadow-sm">
           <h6 class="fw-semibold mb-3">Data Peminjaman Terbaru</h6>
@@ -140,6 +134,8 @@ if (!isset($_SESSION['user_email'])) {
       </div>
     </div>
   </div>
+
+  
 
   <!-- Scripts -->
   <script>
