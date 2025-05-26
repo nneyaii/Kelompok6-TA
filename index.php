@@ -99,13 +99,6 @@ if (!isset($_SESSION['user_email'])) {
     </div>
 
     <!-- Grafik & Tabel -->
-    <div class="row g-3">
-      <div class="col-md-6">
-        <div class="card p-3 shadow-sm">
-          <h6 class="fw-semibold mb-3">Grafik Peminjaman</h6>
-          <div style="height: 200px; background: #e2e8f0; border-radius: 8px;"></div>
-        </div>
-      </div>
       <div class="col-md-6">
         <div class="card p-3 shadow-sm">
           <h6 class="fw-semibold mb-3">Data Peminjaman Terbaru</h6>
@@ -113,26 +106,23 @@ if (!isset($_SESSION['user_email'])) {
             <thead class="table-light">
               <tr>
                 <th>Tanggal</th>
-                <th>Nama</th>
-                <th>Buku</th>
+                <th>Anggota</th>
+                <th>Tempo</th>
                 <th>Status</th>
-                <th>Aksi</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>25 Mei 2025</td>
-                <td>Ahmad</td>
-                <td>Laskar Pelangi</td>
-                <td><span class="badge bg-warning text-dark">Dipinjam</span></td>
-                <td><button class="btn btn-success btn-sm">Detail</button></td>
+                <td>15-09-2020</td>
+                <td>Heri Perdi</td>
+                <td>18-09-2020</td>
+                <td><span class="text-dark">Dipinjam</span></td>
               </tr>
               <tr>
-                <td>24 Mei 2025</td>
-                <td>Siti</td>
-                <td>Filosofi Teras</td>
-                <td><span class="badge bg-secondary">Dikembalikan</span></td>
-                <td><button class="btn btn-success btn-sm">Detail</button></td>
+                <td>15-09-2020</td>
+                <td>Heri Perdi</td>
+                <td>18-09-2020</td>
+                <td><span class="text-dark">Kembali</span></td>
               </tr>
             </tbody>
           </table>
