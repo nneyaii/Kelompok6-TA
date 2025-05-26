@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Peminjaman Buku</title>
+    <title>Peminjamann Buku</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -68,23 +68,28 @@
     <h4><i class="fas fa-book-reader me-2"></i>Perpus Admin</h4>
     <nav>
         <a href="../index.php"><i class="fas fa-chart-pie me-2"></i> Dashboard</a>
-        <a href="pengguna.php" class="active"><i class="fas fa-user-shield me-2"></i> Admin</a>
+        <a href="pengguna.php" ><i class="fas fa-user-shield me-2"></i> Admin</a>
         <a href="../data-anggota/index.php"><i class="fas fa-users me-2"></i> Data Anggota</a>
         <a href="../data-buku/index.php"><i class="fas fa-book me-2"></i> Data Buku</a>
-        <a href="../peminjamann-buku/index.php"><i class="fas fa-book-reader me-2"></i> Peminjaman Buku</a>
+        <a href="../peminjamann-buku/index.php" class="active"><i class="fas fa-book-reader me-2"></i> Peminjaman Buku</a>
         <a href="../pengadaan-buku/index.php"><i class="fas fa-box me-2"></i> Pengadaan Buku</a>
         <a href="../profil-admin/index.php"><i class="fas fa-user-circle me-2"></i> Profil Admin</a>
     </nav>
 </div>
-    <h2>Laporan Peminjaman</h2>
 
-    <form method="GET" class="filter-form">
-        <input type="date" name="mulai" value="<?= $_GET['mulai'] ?? '' ?>">
-        <input type="date" name="akhir" value="<?= $_GET['akhir'] ?? '' ?>">
-        <button type="submit">Filter</button>
-        <a href="index.php" class="reset-btn">Reset</a>
-        <a href="tambah.php" class="add-btn">Tambah Data</a>
-    </form>
+    <!-- Main Content -->
+    <div class="main-content" style="margin-left:260px; padding:20px;">
+        <h2>Laporan Peminjaman</h2>
+
+        <!-- Form Filter -->
+        <form method="GET">
+            <input type="date" name="tanggal_mulai" value="<?= $_GET['tanggal_mulai'] ?? '' ?>">
+            <input type="date" name="tanggal_akhir" value="<?= $_GET['tanggal_akhir'] ?? '' ?>">
+            <button type="submit">Filter</button>
+            <a href="tambah.php">Tambah Data</a>
+            <a href="cetak_pdf.php?tanggal_mulai=<?= $_GET['tanggal_mulai'] ?? '' ?>&tanggal_akhir=<?= $_GET['tanggal_akhir'] ?? '' ?>" target="_blank">Cetak PDF</a>
+        </form>
+
 
     <table>
         <thead>
