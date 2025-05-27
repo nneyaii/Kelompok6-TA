@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $keterangan = $_POST['keterangan'];
 
     $koneksi->query("INSERT INTO peminjaman (id_pinjam, tgl_pinjam, anggota, tempo, status, keterangan) 
-                     VALUES ('$id_pinjam', '$tgl_pinjam', '$anggota', '$tempo', '$status', '$keterangan')");
+                    VALUES ('$id_pinjam', '$tgl_pinjam', '$anggota', '$tempo', '$status', '$keterangan')");
 
     header("Location: index.php");
 }

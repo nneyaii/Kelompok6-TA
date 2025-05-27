@@ -138,73 +138,45 @@ if (!isset($_SESSION['user_email'])) {
         <thead class="table-light">
           <tr>
             <th>Judul Buku</th>
-            <th>Penerbit</th>
-            <th>Stok</th>
-            <th>Kategori</th>
-            <th>Rak</th>
+            <th>Penulis</th>
+            <th>Jumlah Dipinjam</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Negeri Para Bedebah</td>
-            <td>PT Gramedia Pustaka Utama</td>
-            <td>5</td>
-            <td>Novel</td>
-            <td>10</td>
+            <td>Laskar Pelangi</td>
+            <td>Andrea Hirata</td>
+            <td>120</td>
           </tr>
           <tr>
-            <td>Buya Hamka</td>
-            <td>Panji Masyarakat</td>
-            <td>1</td>
-            <td>Novel</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>3726 MDPL</td>
-            <td>Romancious</td>
-            <td>9</td>
-            <td>Novel Fiksi</td>
-            <td>15</td>
+            <td>Negeri 5 Menara</td>
+            <td>Ahmad Fuadi</td>
+            <td>98</td>
           </tr>
         </tbody>
       </table>
     </div>
 
     <div class="card p-3 shadow-sm mb-4">
-      <h6 class="fw-semibold mb-3">Data Admin</h6>
+      <h6 class="fw-semibold mb-3">Data Anggota Aktif</h6>
       <table class="table table-bordered table-hover mb-0">
         <thead class="table-light">
           <tr>
-            <th>Nama User</th>
+            <th>Nama</th>
             <th>Email</th>
-            <th>Status</th>
-            <th>Level</th>
+            <th>Jumlah Pinjam</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Yoga</td>
-            <td>adiyoga@gmail.com</td>
-            <td>Aktif</td>
-            <td>Kepala</td>
+            <td>Heri Perdi</td>
+            <td>heri@gmail.com</td>
+            <td>25</td>
           </tr>
           <tr>
-            <td>Aini</td>
-            <td>aini@gmail.com</td>
-            <td>Aktif</td>
-            <td>Petugas</td>
-          </tr>
-          <tr>
-            <td>figa</td>
-            <td>alfigaaprilia@gmail.com</td>
-            <td>Aktif</td>
-            <td>Administrasi</td>
-          </tr>
-          <tr>
-            <td>tama</td>
-            <td>tama@gmail.com</td>
-            <td>Aktif</td>
-            <td>Petugas</td>
+            <td>Rina Wulandari</td>
+            <td>rina@mail.com</td>
+            <td>22</td>
           </tr>
         </tbody>
       </table>
