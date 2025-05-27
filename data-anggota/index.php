@@ -172,7 +172,7 @@
 <div class="main-content">
     <div class="container">
         <h2>Data Anggota</h2>
-        <a class="btn btn-add" href="tambah.php">Tambah Data</a>
+        <a href="tambah.php" class="btn btn-primary">Tambah Data</a>
         <table>
             <tr>
                 <th>No</th>

@@ -85,8 +85,8 @@
         <form method="GET">
             <input type="date" name="tanggal_mulai" value="<?= $_GET['tanggal_mulai'] ?? '' ?>">
             <input type="date" name="tanggal_akhir" value="<?= $_GET['tanggal_akhir'] ?? '' ?>">
-            <button type="submit">Filter</button>
-            <a href="tambah.php">Tambah Data</a>
+            <a href="tambah.php" class="btn btn-primary">Tambah Data</a>
+
         </form>
 
 

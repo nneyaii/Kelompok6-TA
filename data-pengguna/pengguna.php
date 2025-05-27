@@ -81,7 +81,7 @@
 <div class="main-content">
     <div class="container">
         <h2>Data Pengguna</h2>
-        <a href="tambah_pengguna.php" class="btn btn-add">Tambah Data</a>
+        <a href="tambah_pengguna.php" class="btn btn-primary">Tambah Data</a>
         <table>
             <thead>
                 <tr>

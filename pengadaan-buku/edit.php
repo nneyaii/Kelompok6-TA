@@ -11,11 +11,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     header("Location: index.php");
 }
 ?>
-<form method="POST">
-    <input type="date" name="tanggal" value="<?= $data['tanggal'] ?>" required><br>
-    <input type="text" name="judul_buku" value="<?= $data['judul_buku'] ?>" required><br>
-    <input type="text" name="asal_buku" value="<?= $data['asal_buku'] ?>" required><br>
-    <input type="number" name="jumlah" value="<?= $data['jumlah'] ?>" required><br>
-    <textarea name="keterangan"><?= $data['keterangan'] ?></textarea><br>
-    <button type="submit">Update</button>
+<form method="POST" style="max-width: 400px; margin: 40px auto; padding: 30px; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <input type="date" name="tanggal" value="<?= $data['tanggal'] ?>" required
+        style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;"><br>
+
+    <input type="text" name="judul_buku" value="<?= $data['judul_buku'] ?>" required
+        style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;"><br>
+
+    <input type="text" name="asal_buku" value="<?= $data['asal_buku'] ?>" required
+        style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;"><br>
+
+    <input type="number" name="jumlah" value="<?= $data['jumlah'] ?>" required
+        style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;"><br>
+
+    <textarea name="keterangan" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px; resize: vertical; height: 80px;"><?= $data['keterangan'] ?></textarea><br>
+
+    <button type="submit"
+        style="width: 100%; padding: 12px; background-color: #007bff; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer;">
+        Update
+    </button>
 </form>
